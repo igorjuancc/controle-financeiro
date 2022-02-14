@@ -1,0 +1,177 @@
+body{
+  overflow: hidden;
+}
+
+h4{
+  color: #074267;
+  font-weight: bold;
+  border-bottom: 2px solid #074267;
+}
+
+.cadastroOk{
+  background-color: rgba(255, 255, 255, 0.61);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: none;
+  z-index: 9999;
+}
+
+.cadastroAviso{
+  background-color: rgba(255, 255, 255, 0.72);
+  width: 34vw;
+  padding: 1vw;
+  padding-bottom: 7vh;
+  border: 2px solid #074267;
+  border-radius: 8px;
+  margin-left: 33vw;
+  margin-top: 2vh;
+}
+
+#btnContinuar{
+  float: right;
+}
+
+.back{
+  background-image: url(Background/dolarCadastro.jpg);
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: fixed;
+  animation-name: fundo;
+  animation-duration: 1s;
+}
+
+.fundo{
+  background-color: rgba(200, 200, 200, 0.7);
+  height: 70vh;
+  width: 32vw;
+  margin-top: 14vh;
+  border-radius: 15px;
+  padding: 3vh;
+}
+
+.divForm{
+  height: 64vh;
+  width: 29.2vw;
+  border: solid 2px #074267;
+  border-radius: 15px;
+  padding: 2vh;
+  z-index: 1;
+}
+
+.formulario{
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.input{
+  border: none;
+  border-bottom: 3px solid #074267;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.69);
+  margin-top: 2vh;
+  height: 6vh;
+  position: relative;
+  width: 20vw;
+  color: #074267;
+}
+
+.input:focus{
+  border: 2px solid #074267;
+  border-radius: 5px;
+  color: #074267;
+  transition-property: all;
+  transition-duration: 0.1s;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.inputErro{
+  color: red;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid red;
+}
+
+.dadosInput{
+  font-size: 12px;
+  position: absolute;
+  z-index: 2;
+  margin-top: -0.4vh;
+  margin-left: 3.6vw;
+  color: #074267;
+  font-weight: bold;
+  display: none;
+}
+
+.dadosInputAtv{
+  border: 2px solid rgb(101,101,101);
+  color: rgb(101,101,101);
+  background-color: rgba(200, 200, 200, 0);
+}
+
+.exibirDados{
+  display: block;
+  background-color: rgba(200, 200, 200, 0);
+}
+
+.btnVoltar{
+  height: 5vh;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #a4c0d1;
+  color: #074267;
+  border: none;
+  border-bottom: 2px solid #074267;
+}
+
+.btnVoltar:hover{
+  background-color: #cee1ec;
+  color: #074267;
+  border: 1px solid #074267;
+  border-bottom: 2px solid #074267;
+  transition-property: all;
+  transition-duration: 0.6s;
+}
+
+.btnSalvar{
+  border-radius: 5px;
+  height: 5vh;
+  font-weight: bold;
+  background-color: #074267;
+  color: #cee1ec;
+  border: none;
+  border-bottom: 2px solid #cee1ec;
+}
+
+.btnSalvar:hover{
+  background-color: rgba(0, 54, 193, 0.7);
+  color: #cee1ec;
+  border: 1px solid #cee1ec;
+  border: 1px solid rgb(2, 46, 161);
+  border-bottom: 2px solid rgb(2, 46, 161);
+  transition-property: all;
+  transition-duration: 0.6s;
+}
+
+.aviso{
+  position: absolute;
+  z-index: 2;
+  width: 27vw;
+  display: none;
+}
+
+/* ========================================================================= */
+
+@keyframes fundo{
+  0%   {filter: blur(2px);}
+  10%  {filter: blur(1.8px);}
+  20%  {filter: blur(1.6px);}
+  30%  {filter: blur(1.4px);}
+  40%  {filter: blur(1.2px);}
+  50%  {filter: blur(1px);}
+  60%  {filter: blur(0.8px);}
+  70%  {filter: blur(0.6px);}
+  80%  {filter: blur(0.4px);}
+  90%  {filter: blur(0.2px);}
+  100% {filter: blur(0);}
+}

@@ -1,0 +1,114 @@
+.input{
+  margin-top: 5px;
+  width: 83%;
+  border: none;
+  border-bottom: 3px solid black;
+  background-color: rgba(255, 255, 255, 0.53);
+}
+
+.input:focus{
+  height: 33px;
+  border: none;
+  background-color: rgba(231, 224, 224, 0);
+  border-bottom: 3px solid rgb(42, 143, 247);
+  color: rgb(0, 41, 255);
+  transition-property: all;
+  transition-duration: 0.6s;
+}
+
+.inputNull{
+  width: 83%;
+  height: 33px;
+  border: 1px solid rgb(0, 87, 255);
+  box-shadow: 0 0 8px 2px rgb(47, 187, 224);
+  padding: 2px;
+}
+
+.inputNull:focus{
+  height: 33px;
+  border: none;
+  background-color: rgba(231, 224, 224, 0);
+  border-bottom: 3px solid rgb(42, 143, 247);
+  color: rgb(0, 41, 255);
+  box-shadow: none;
+  transition-property: all;
+  transition-duration: 0.6s;
+}
+
+.divNull{
+  background-color: rgba(34, 205, 215, 0.44);
+  border-left: 3px solid rgb(0, 117, 255);
+  width: 100%;
+  color: rgb(0, 64, 255);
+  margin-bottom: 10px;
+}
+
+.divErro{
+  background-color: rgba(232, 22, 22, 0.34);
+  border-left: 3px solid rgb(255, 0, 0);
+  width: 100%;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.fundo{
+  background-image: url(Background/dolar.jpg);
+  height: 100vh;
+  width: 100vw;
+}
+
+.fundoErro{
+  background-image: url(Background/dolarErro.jpg);
+  height: 100vh;
+  width: 100vw;
+}
+
+
+#boxLogin{
+  background-color: rgba(231, 224, 224, 0.79);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+#imgDim{
+  height: 18vh;
+  width: 8vw;
+  border-radius: 200px;
+  position: absolute;
+  left: 38%;
+  top: 5%;
+  z-index: 1;
+}
+
+#formLogin{
+  border: 2px solid rgba(0, 100, 0, 1);
+  padding: 50px;
+  padding-top: 80px;
+  margin-top: 8%;
+  text-align: center;
+}
+
+.botao{
+  border-radius: 5px;
+  width: 45%;
+  margin-top: 10px;
+}
+
+.botao:hover{
+  background-color: rgba(0, 100, 0, 0.70);
+  color: white;
+}
+
+#logoUser{
+  height: 33px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+#logoSenha{
+  height: 33px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+/*==========================================================================*/

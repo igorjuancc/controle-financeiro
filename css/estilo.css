@@ -1,0 +1,472 @@
+body{
+  background-color: rgb(228, 223, 223);
+}
+
+/*============================ Menu Vertical==================================*/
+
+.menuVert{
+  background-color: #0d2d41;
+  color: rgb(255, 255, 255);
+  height: 92vh;
+  padding: 0;
+  padding-top: 2vw;
+}
+
+.menuVert a{
+  background-color: #0d3541;
+  display: block;
+  padding: 12px;
+  padding-left: 30px;
+  text-decoration: none;
+  margin-top: 2px;
+  color: rgb(247, 247, 247);
+}
+
+.menuVert a:hover{
+  background-color: #4682B4;
+  border-right: 3px solid rgb(247, 247, 247);
+  padding-left: 5vw;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.menuVert a.ativado{
+  background-color: rgba(255, 255, 255, 0.29);
+  color: #02394b;
+  border-right: 3px solid rgb(247, 247, 247);
+  padding-left: 3vw;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*============================ Menu Horizontal================================*/
+
+.navbar-light{
+  background-color: rgb(187, 187, 187);
+  border: 1px solid rgb(153, 153, 153);
+  border-right: none;
+  padding: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: #0d2d41;
+  font-weight: bold;
+}
+
+#logoMenu{
+  width: 6vw;
+  height:6vh;
+  padding: 1;
+  margin: 1;
+  background-color: #0d2d41;
+}
+
+#logoMenu:hover{
+  background-color: #4682B4;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
+.logoff{
+  width: 2vw;
+  height:5vh;
+  padding: 1;
+  margin: 1;
+  background-color: #0d2d41;
+}
+
+.logoff:hover{
+  background-color: #4682B4;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
+/*================================ Conteudo ==================================*/
+
+h4{
+  border-bottom: 2px solid #0d2d41;
+  width: 55vw;
+  color: #0d2d41;
+}
+
+h5,h6{
+  color: #0d2d41;
+}
+
+.boxConteudo{
+  background-color: rgba(205, 199, 199, 0.7);
+  margin-top: 1vw;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.grafico{
+  width: 20vw;
+  height: 30vh;
+}
+
+.boxGraf{
+  border-right: 8px solid rgb(228, 223, 223);
+  padding: 1px;
+}
+
+.boxConteudo2{
+  border-radius: 10px;
+  background-color: rgba(205, 199, 199, 0.7);
+  margin-top: 1vw;
+  border-right: 8px solid rgb(228, 223, 223);
+  height: auto;
+  padding: 20px;
+}
+
+.input{
+  width: 65vw;
+  margin-left: 1vw;
+}
+
+.divAviso{
+  margin-top: 1vh;
+  display: none;
+}
+
+.aviso{
+  width: 20vw;
+  height: 5vh;
+  position: absolute;
+  left: 3vw;
+  top: 15vh;
+  z-index: 1;
+}
+
+.aviso2{
+  width: 27vw;
+  height: 7vh;
+  position: absolute;
+  left: 6vw;
+  top: 8vh;
+  z-index: 1;
+}
+
+.graf2{
+  text-align: center;
+}
+/*================================ Editar Receita ==================================*/
+
+.boxEdit{
+  background-color: rgba(38, 38, 38, 0.9);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+#indexBoxEdit{
+  position: absolute;
+  display: none;
+  z-index: 9999;
+}
+
+#indexBoxEditDespesa{
+  position: absolute;
+  display: none;
+  z-index: 9999;
+}
+
+#divEditarReceita{
+  background-color: rgba(205, 199, 199, 1);
+  padding: 15px;
+  border-radius: 3px;
+}
+
+#divEditarDespesa{
+  background-color: rgba(205, 199, 199, 1);
+  padding: 15px;
+  border-radius: 3px;
+}
+
+#divEditarCartao{
+  background-color: rgba(205, 199, 199, 1);
+  padding: 15px;
+  border-radius: 3px;
+}
+
+#divEditarReceita h5{
+  border-bottom: 1px solid rgb(161, 160, 160);
+}
+
+#divEditarDespesa h5{
+  border-bottom: 1px solid rgb(161, 160, 160);
+}
+
+.inputEditarReceita{
+  border: 1px solid #0d2d41;
+  border-radius: 3px;
+  color: #0d2d41;
+  background-color: rgba(236, 236, 236, 0.7);
+  margin-bottom: 5px;
+}
+
+.inputEditarReceita:focus{
+  border: none;
+  border-bottom: 2px solid #0d2d41;
+  border-radius: 1px;
+  background-color: rgba(205, 199, 199, 1);
+  color: #0d2d41;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+#avisoEditar{
+  display: none;
+}
+/*================================ Input ==================================*/
+
+.inputDados{
+  border: none;
+  border-bottom: 2px solid #0d2d41;
+  color: #0d2d41;
+  background-color: rgba(236, 236, 236, 0.7);
+  margin-right: 14px;
+}
+
+.inputErro{
+  border: none;
+  border-bottom: 2px solid #ff0000;
+  color: #ff0000;
+  background-color: rgba(236, 236, 236, 0.7);
+  margin-right: 14px;
+  box-shadow: 0 0 8px 1px rgb(224, 47, 47);
+}
+
+.btnA{
+  border: none;
+  margin: 4px;
+  border: 1px solid #0d2d41;
+  color: #0d2d41;
+  background-color: rgba(236, 236, 236, 0.7);
+}
+
+.btnA:hover{
+  border: none;
+  margin: 4px;
+  border: 1px solid #0d2d41;
+  background-color: #0d2d41;
+  color: rgba(236, 236, 236, 0.7);
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
+.btnB{
+  border: none;
+  margin: 4px;
+  border: 1px solid #0d2d41;
+  color: #0d2d41;
+  background-color: rgba(236, 236, 236, 0.7);
+}
+
+.btnB:hover{
+  border: none;
+  margin: 4px;
+  border: 1px solid #0d2d41;
+  background-color: rgba(48, 48, 48, 0.7);
+  color: #b6b6b6;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
+.divInput{
+  display: none;
+}
+
+/*================================ Botões pagamento ==================================*/
+
+.img-btn{
+  width: 2vw;
+  height: 4vh;
+  background-color: #0d2d41;
+}
+
+.img-btnAtv{
+  width: 2vw;
+  height: 4vh;
+  background-color: rgba(205, 199, 199, 0.7);
+}
+
+.label-btn1{
+  border: 1px solid #0d2d41;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5px;
+}
+
+.label-btn1Atv{
+  border: 1px solid rgba(205, 199, 199, 0.7);
+  box-shadow: 1px 1px 5px 2px #60839a;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5px;
+  background-color: #0d2d41;
+}
+
+.label-btn2{
+  border: 1px solid #0d2d41;
+  padding: 5px;
+  margin-left: -5px;
+}
+
+.label-btn2Atv{
+  border: 1px solid #60839a;
+  box-shadow: 1px 1px 5px 2px #60839a;
+  padding: 5px;
+  margin-left: -5px;
+  background-color: #0d2d41;
+}
+
+.label-btn3{
+  border: 1px solid #0d2d41;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  margin-left: -5px;
+}
+
+.label-btn3Atv{
+  border: 1px solid rgba(205, 199, 199, 0.7);
+  box-shadow: 1px 1px 5px 2px #60839a;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  margin-left: -5px;
+  background-color: #0d2d41;
+}
+
+#btnOn{
+  text-align: center;
+  color: rgb(79, 79, 79);
+  font-size: 14px;
+}
+
+.btnSts{
+  width: 5vw;
+  height: 2vw;
+}
+
+/*================================ Tabelas ==================================*/
+
+.img-table{
+  background-color: #0d2d41;
+  width: 2vw;
+  margin-left: 2vw;
+}
+
+.img-table:hover{
+  background-color: #4682B4;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
+/*================================ Cartao ==================================*/
+
+.cartao{
+  width: 20vw;
+  height: 30vh;
+  display: inline-block;
+  z-index: -1;
+}
+
+.selectCard{
+  box-shadow: 1px 1px 8px 2px #1cd7e3;
+  margin-left: 9px;
+  margin-right: 7px;
+}
+
+.selectCardErro{
+  box-shadow: 1px 1px 8px 2px #ff0000;
+  margin-left: 9px;
+  margin-right: 7px;
+}
+
+.divBtn{
+  text-align: right;
+}
+
+#infoCard{
+  position: relative;
+  text-align: center;
+}
+
+#nomeCard{
+  position: absolute;
+  top: 10px;
+  left: 34.6vw;
+  text-align: right;
+  background-color: rgb(29, 29, 31);
+  color: #54dee7;
+  width: 13vw;
+  font-size: 19px;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(205, 199, 199, 0.7);
+}
+
+#tipoCard{
+  position: absolute;
+  color: #54dee7;
+  top: 63px;
+  left: 36vw;
+}
+
+#digitoCard{
+  position: absolute;
+  top: 98px;
+  left: 42.5vw;
+  color: #54dee7;
+  font-size: 20px;
+}
+
+#bandeiraCard{
+  position: absolute;
+  top: 136px;
+  left: 43vw;
+  width: 3.8vw;
+  height: 5.3vh;
+  background-color: rgba(205, 199, 199, 0.7);
+  border: 1px solid rgba(205, 199, 199, 0.7);
+  box-shadow: 1px 1px 8px 2px #1cd7e3;
+}
+
+#dadosCardEdit{
+  width: 8vw;
+  margin-left: 2vw;
+  margin-bottom: 9px;
+}
+
+#bandeiraCartao{
+  width: 3.8vw;
+  height: 5.3vh;
+  background-color: white;
+  border: 1px solid #0d2d41;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+#bandeiraCartaoEdit{
+  width: 3.8vw;
+  height: 5.3vh;
+  background-color: white;
+  border: 1px solid #0d2d41;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+#tabelaInserirCartoes td{
+  padding: 8px;
+}
+
+#tabelaInserirCartoes th{
+  padding-left: 8px;
+}
+
+/*================================ filtros ==================================*/
+
+.filtro{
+  text-align: right;
+}
