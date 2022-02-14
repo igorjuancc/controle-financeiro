@@ -1,6 +1,6 @@
 <?php
-  $servername = "localhost";
+  $servername = "mysql-financeiro";
   $username = "root";
-  $password = "web1";
-  $dbname = "MEUSGASTOS";
+  $password = "senha";
+  $dbname = "bd_controle_financeiro";
 ?>
