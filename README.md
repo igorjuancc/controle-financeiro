@@ -41,6 +41,21 @@ git clone https://github.com/igorjuancc/controle-financeiro.git
 4. Altere o arquivo *credentials.php* encontrado na pasta controle-financeiro/php/BD/lib com os dados de configuração do banco de dados do seu computador.
 5. Execute os softwares PHP e Apache e utilize o navegador de internet para testar a aplicação.
 
+<table>
+      <tr align="center">
+        <th>Login</th>
+        <th>Tela Despesas</th>
+      </tr>
+      <tr>
+        <td>
+          <img height="250vh" width="400vw" src="https://github.com/igorjuancc/controle-financeiro/blob/main/img-telas/login.png" />
+        </td>
+        <td>
+          <img height="250vh" width="500vw" src="https://github.com/igorjuancc/controle-financeiro/blob/main/img-telas/despesas.png" />
+        </td>
+      </tr>  
+    </table> 
+
 ## Autor
 <a href="https://br.linkedin.com/in/igor-juan-cordeiro-da-costa-2b4a77101">
 <img src="https://avatars.githubusercontent.com/u/50890812?s=400&u=566e615dd1691c75eabd1dcb4ba749be82d1e86c&v=4" width="100px;" alt="Igor Juan" />
